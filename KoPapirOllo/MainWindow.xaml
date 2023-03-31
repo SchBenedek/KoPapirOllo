@@ -1,0 +1,37 @@
+﻿<Window x:Class="KoPapirOllo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KoPapirOllo"
+        mc:Ignorable="d"
+        Title="Kő-Papír-Olló" Height="450" Width="800">
+    <Grid>
+        <Button Click="Ko_Gomb" HorizontalAlignment="Left" Margin="41,69,0,0" VerticalAlignment="Top" Height="107" Width="102">
+            <Button.Content>
+                <Image Name="Ko" Source="C:\Users\bened\Desktop\AAProg\KoPapirOllo\KoPapirOllo\Rock.jpg" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+            </Button.Content>
+        </Button>
+        <Button Click="Papir_Gomb" HorizontalAlignment="Left" Margin="143,83,0,0" VerticalAlignment="Top" Height="79" Width="105">
+            <Button.Content>
+                <Image Source="C:\Users\bened\Desktop\AAProg\KoPapirOllo\KoPapirOllo\Paper.jpg" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.481,1.098"/>
+            </Button.Content>
+        </Button>
+        <Button Click="Ollo_Gomb" HorizontalAlignment="Left" Margin="248,71,0,0" VerticalAlignment="Top" Height="103" Width="103">
+            <Button.Content>
+                <Image Source="C:\Users\bened\Desktop\AAProg\KoPapirOllo\KoPapirOllo\Scissors.jpg" HorizontalAlignment="Left" Height="100" VerticalAlignment="Center" Width="100"/>
+            </Button.Content>
+        </Button>
+        <Image x:Name="Ko_Gep" Source="C:\Users\bened\Desktop\AAProg\KoPapirOllo\KoPapirOllo\Rock.jpg" HorizontalAlignment="Left" Height="100" Margin="560,69,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden"/>
+        <Image x:Name="Papir_Gep" Source="C:\Users\bened\Desktop\AAProg\KoPapirOllo\KoPapirOllo\Paper.jpg" HorizontalAlignment="Left" Height="74" Margin="560,174,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.481,1.098" Visibility="Hidden"/>
+        <Image x:Name="Ollo_Gep" Source="C:\Users\bened\Desktop\AAProg\KoPapirOllo\KoPapirOllo\Scissors.jpg" HorizontalAlignment="Left" Height="100" Margin="559,264,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden"/>
+        <Label Name="JatszmakLabel" Content="Játszmák: " HorizontalAlignment="Left" Margin="25,330,0,0" VerticalAlignment="Top" Width="118"/>
+        <Label Name="JatekosLabel" Content="Játékos: " HorizontalAlignment="Left" Margin="25,361,0,0" VerticalAlignment="Top" Width="118"/>
+        <Label Name="GepLabel" Content="Gép: " HorizontalAlignment="Left" Margin="25,387,0,0" VerticalAlignment="Top" Width="118"/>
+        <Button Click="Jatek_Gomb" Content="Játék" HorizontalAlignment="Left" Margin="118,248,0,0" VerticalAlignment="Top" Height="32" Width="144"/>
+        <Label Name="Valasztott" Content="" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="118,217,0,0" VerticalAlignment="Top" Width="144"/>
+
+
+
+    </Grid>
+</Window>
