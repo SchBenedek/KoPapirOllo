@@ -93,6 +93,8 @@ namespace KoPapirOllo
             {
                 Ollo_Gep.Visibility = Visibility.Visible;
             }
+            
+            // Benedek nap egy szep ember
         }
     }
 }
