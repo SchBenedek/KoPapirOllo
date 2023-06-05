@@ -49,7 +49,7 @@ namespace KoPapirOllo
             Ko_Gep.Visibility = Visibility.Hidden;
             Papir_Gep.Visibility = Visibility.Hidden;
             Ollo_Gep.Visibility = Visibility.Hidden;
-            int rszam=r.Next(4);
+            int rszam=r.Next(3) + 1;
             JatszmakLabel.Content = "Játszmák: " + (jatekok += 1);
             if (rszam == 1 && szam==3)
             {
